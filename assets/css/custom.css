@@ -1,0 +1,431 @@
+
+
+.cma-brand-color{
+  background-color: rgb(158, 125, 8);
+}
+.required{
+  color: red;
+}
+.medium, .high, .very_high, .low, .very_low
+{
+  height: 100px;
+  width: 100px;
+  cursor: cell;
+}
+.department_button{
+    background:none!important;
+     border:none;
+     padding:0!important;
+     margin: 5px;
+
+    /*optional*/
+    font-family:arial,sans-serif; /*input has OS specific font-family*/
+     color:#069;
+     text-decoration:underline;
+     cursor:pointer;
+     font-weight: bold;
+}
+
+.TablesBox {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+
+td, th {
+
+text-align: left;
+padding: 8px;
+}
+
+tr:nth-child(even) {
+
+}
+
+body{
+  overflow: scroll;
+}
+
+.modal {
+  overflow-y:auto;
+}
+
+textarea{
+		-webkit-transition: height 0.2s;
+		-moz-transition: height 0.2s;
+		transition: height 0.2s;
+		text-align: left;
+}
+/* START RATING COLORS  */
+.one{
+  //
+    background-color: #006400;
+}
+.two{
+    background-color: #00FF00;
+}
+.three{
+    background-color: #FFFF00;
+}
+.four{
+    background-color: #FFC200;
+}
+.five{
+    background-color: #FF0000;
+}
+
+.opp-one{
+    background-color: #d4ecf8;
+}
+.opp-two{
+    background-color: #d4ecf8;
+}
+.opp-three{
+    background-color: #99d1ec;
+}
+.opp-four{
+    background-color: #99d1ec;
+}
+.opp-five{
+    background-color: #59b4e0;
+}
+
+/* END RATING COLORS */
+
+.report-menu li a p{
+  font-weight: bold;
+  font-size: 18px;
+}
+.report-menu .has-treeview{
+  list-style-type: none;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.report-menu .has-treeview ul li{
+  font-size: 20px;
+}
+
+.report-menu .has-treeview ul li button{
+  font-size: 18px;
+}
+
+/* start spinner */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid rgb(158, 125, 8);
+  border-bottom: 16px solid rgb(158, 125, 8);
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  text-align: center;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* fancy loader */
+.lds-spinner {
+  color: official;
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+}
+.lds-spinner div {
+  transform-origin: 32px 32px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 29px;
+  width: 5px;
+  height: 14px;
+  border-radius: 20%;
+  background: #9e7d08;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* end spinner */
+
+#loaders {
+    height: 100px;
+    width: 260px;
+    margin: 70px auto 0;
+    position: relative;
+}
+.loaders {
+    background: #ccc;
+    width: 40px;
+    height: 40px;
+    border-radius: 24px;
+    display: inline-block;
+    position: absolute;
+}
+.loader-1 {
+    animation: animateDot1 1.5s linear infinite;
+    left: 130px;
+    background: #f73138;
+}
+.loader-2 {
+    background: #00b733;
+    left: 60px;
+    animation: animateDot2 1.5s linear infinite;
+    animation-delay: 0.5s;
+}
+.loader-3 {
+    background: #448afc;
+    left: 130px;
+    animation: animateDot3 1.5s linear infinite;
+}
+.loader-4 {
+    background: #950faf;
+    left: 60px;
+    animation: animateDot4 1.5s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes animateDot1 {
+    0%{ transform: rotate(0deg) translateX(-60px); }
+    25% { transform: rotate(180deg) translateX(-60px); }
+    75% { transform: rotate(180deg) translateX(-60px); }
+    100% { transform: rotate(360deg) translateX(-60px); }
+}
+@keyframes animateDot2 {
+    0%{ transform: rotate(-0deg) translateX(-70px); }
+    25% { transform: rotate(-180deg) translateX(-70px); }
+    75% { transform: rotate(-180deg) translateX(-70px); }
+    100% { transform: rotate(-360deg) translateX(-70px); }
+}
+@keyframes animateDot3 {
+    0%{ transform: rotate(0deg) translateX(60px); }
+    25% { transform: rotate(180deg) translateX(60px); }
+    75% { transform: rotate(180deg) translateX(60px); }
+    100% { transform: rotate(360deg) translateX(60px); }
+}
+@keyframes animateDot4 {
+    0%{ transform: rotate(-0deg) translateX(60px); }
+    25% { transform: rotate(-180deg) translateX(60px); }
+    75% { transform: rotate(-180deg) translateX(60px); }
+    100% { transform: rotate(-360deg) translateX(60px); }
+}
+
+/* start pace */
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  -webkit-transform: translate3d(0, -50px, 0);
+  -ms-transform: translate3d(0, -50px, 0);
+  transform: translate3d(0, -50px, 0);
+
+  -webkit-transition: -webkit-transform .5s ease-out;
+  -ms-transition: -webkit-transform .5s ease-out;
+  transition: transform .5s ease-out;
+}
+
+.pace.pace-active {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.pace .pace-progress {
+  display: block;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 10px;
+  background: #29d;
+
+  pointer-events: none;
+}
+
+/* end pace */
+
+
+/* start shimer css */
+.shimmer {
+  text-align: center;
+  color: rgba(255,255,255,0.1);
+  background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #222;
+}
+@-moz-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-o-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+/* end shimmer css */
+
+/* start shake effect */
+.shake_effect
+{
+ animation: shake 1s ;
+}
+@keyframes shake
+{
+ 10%, 90%
+ {
+  transform: translate3d(-1px, 0, 0);
+ }
+
+ 20%, 80%
+ {
+  transform: translate3d(2px, 0, 0);
+ }
+
+ 30%, 50%, 70%
+ {
+  transform: translate3d(-4px, 0, 0);
+ }
+
+ 40%, 60%
+ {
+  transform: translate3d(4px, 0, 0);
+ }
+}
+
+/*end shake effect */
+
+/* dataTable multipe row icons */
+tbody.collapse.in {
+  display: table-row-group;
+}
+
+/* allow modal to scroll */
+.modal{
+  overflow-y: auto !important;
+}
+
+select[readonly]{
+    background: #eee;
+    cursor:no-drop;
+}
+
+select[readonly] option{
+    display:none;
+}

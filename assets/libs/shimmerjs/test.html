@@ -1,0 +1,55 @@
+
+<style>
+    /* styles */
+    body {
+        font-family: Helvetica;
+    } 
+
+    @font-face {
+        font-family: 'LaneNarrow';
+        src: url('fonts/LANENAR_.ttf');
+    }    
+</style>
+
+<div style="">
+
+    <div style="position:relative; margin: 20px; padding: 20px; width: 255px;">
+        <div style="margin: 20px 0px;">
+            Shimmer in Canvas
+        </div>
+        <div style="position: absolute; padding: 40px 30px 10px 30px; border: 1px solid #ccc; background-image:url('shimmer.jpg'); ">
+            <canvas id="shimmer" height="120" width="255"></canvas>
+        </div>
+    </div>
+</div>
+
+
+<script src="shimmer.js" type="text/javascript"></script>
+
+<script>
+
+    // requestAnim shim layer by Paul Irish
+    window.requestAnimFrame = (function(){
+      return  window.requestAnimationFrame       || 
+              window.webkitRequestAnimationFrame || 
+              window.mozRequestAnimationFrame    || 
+              window.oRequestAnimationFrame      || 
+              window.msRequestAnimationFrame     || 
+              function(/* function */ callback, /* DOMElement */ element){
+                window.setTimeout(callback, 1000 / 60);
+              };
+    })();
+    Shimmer.settings({
+        'canvas': 'shimmer',
+        'text' : 'ShimmerJS',
+        'font': '40pt LaneNarrow, Verdana',
+        'animations': ['slide','slide','slide','glow']
+    });
+    function animate() {
+        requestAnimFrame( animate );
+        Shimmer.on();
+    };
+    animate();
+
+</script>
+

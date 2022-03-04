@@ -1,0 +1,80 @@
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans');*/
+/*
+table {
+  border-collapse: collapse;
+
+}
+table{
+  border: 1px solid black;
+}
+table, th, td {
+  border: 1px solid black;
+}
+*/
+body{
+  font-family: 'Crimson Text', serif;
+  font-size: 20px;
+}
+#activities-with-risks-table,.detailed-analysis-table, .static-table{
+  border: 1px solid black;
+  border-collapse: collapse;
+  table-layout:fixed;
+  word-wrap:break-word;
+  padding: 0px;
+}
+#activities-with-risks-table td,.detailed-analysis-table td, .static-table td,.static-table th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  table-layout:fixed;
+  word-wrap:break-word;
+  font-size: 20px;
+  padding: 0px;
+}
+
+
+.detailed-analysis-table thead, #activities-with-risks-table thead
+  {
+    display: table-row-group;font-weight: bold;
+  }
+.detailed-analysis-table tfoot, #activities-with-risks-table tfoot
+  {
+    display: table-row-group
+  }
+.detailed-analysis-table tr, #activities-with-risks-table tr
+  {
+    page-break-inside: avoid
+  }
+
+
+
+.heatmap-table, .heatmap-table tr, .heatmap-table td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  word-wrap:break-word;
+  padding: 0px;
+}
+.heatmap-ratings-table table, .heatmap-ratings-table table  td, .heatmap-ratings-table table tr{
+  border: 1px solid black;
+  border-collapse: collapse;
+  word-wrap:break-word;
+  padding: 0px;
+}
+.heatmap-ratings-table table thead{
+  font-weight: bold;
+}
+.simple-table thead{
+  font-weight: bold;
+}
+.simple-table, .simple-table td, .simple-table tr{
+  border: 1px solid black;
+  border-collapse: collapse;
+  word-wrap:break-word;
+  font-size: 20px;
+  padding: 0px;
+}
+.static-table-heatmap, .static-table-heatmap td,.static-table-heatmap tr{
+  border: 1px solid black;
+  border-collapse: collapse;
+  word-wrap:break-word;
+  padding: 0px;
+}
